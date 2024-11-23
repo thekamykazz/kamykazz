@@ -25,13 +25,26 @@
         }
         .links {
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
         }
         .links a {
             display: block;
-            margin: 5px 0;
+            padding: 10px 20px;
+            border-radius: 25px;
             font-weight: bold;
-            color: #D3BC8D;
+            color: #fff;
             text-decoration: none;
+        }
+        .links a.youtube {
+            background-color: #FF0000; /* Couleur rouge pour YouTube */
+        }
+        .links a.instagram {
+            background-color: #C13584; /* Couleur rose pour Instagram */
+        }
+        .links a.twitch {
+            background-color: #6441A5; /* Couleur violet pour Twitch */
         }
         .audio-container {
             display: none;
@@ -47,11 +60,14 @@
             </a>
         </div>
         <div class="links">
-            <a href="https://www.youtube.com/@kamykazz" target="_blank">Youtube</a>
-            <a href="https://instagram.com/mkrvdd_" target="_blank">Instagram</a>
-            <a href="https://www.twitch.tv/thekamykazz" target="_blank">Twitch</a>
+            <a href="https://www.youtube.com/@kamykazz" target="_blank" class="youtube">YouTube</a>
+            <a href="https://instagram.com/mkrvdd_" target="_blank" class="instagram">Instagram</a>
+            <a href="https://www.twitch.tv/thekamykazz" target="_blank" class="twitch">Twitch</a>
         </div>
-        <p></p>
+        <div class="audio-container">
+            <iframe width="0" height="0" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="autoplay"></iframe>
+        </div>
+        <p>© Created By TheKamykazz</p>
     </div>
 </body>
 </html>
